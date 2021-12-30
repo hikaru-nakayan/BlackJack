@@ -264,6 +264,7 @@ public:
         
     }
 
+    
     char hit_or_stand()
     {
         char s;
@@ -434,6 +435,7 @@ int main()
     Deck deck1;
     deck1.shuffle_cards();
 
+    //第二引数はチップ数
     Player hikaru(deck1, 5000);
     Deeler deeler(deck1);
 
