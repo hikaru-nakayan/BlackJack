@@ -48,7 +48,7 @@ public:
 class Deck
 {
     public:
-        vector<pair<char, int>> cards;
+        vector<pair<char, int> > cards;
 
         //52枚のトランプカードをセットする。D:ダイア, H:ハート, S:スペード, C:クローバー         
         Deck()
@@ -110,7 +110,7 @@ class Deck
 class Hand
 {
     public:
-        vector<pair<char, int>> hand;
+        vector<pair<char, int> > hand;
 
         //ハンドにAがあるか否か
         bool is_A()
@@ -220,7 +220,7 @@ class Deeler : public Hand
             cout << endl;
         }
 
-        void deel(vector<pair<char, int>> &h)
+        void deel(vector<pair<char, int> > &h)
         {
             h.push_back((*deck).top_card());
             deck->delete_top();
