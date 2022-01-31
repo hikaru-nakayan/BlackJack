@@ -189,7 +189,7 @@ class Player : public Hand
 
         void print_chip()
         {
-            cout << ch.chip_num() << "チップ持っています。" << endl;
+            cout << "あなたは" << ch.chip_num() << "チップ持っています。" << endl;
         }
        
 
