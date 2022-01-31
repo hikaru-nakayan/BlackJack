@@ -186,6 +186,11 @@ class Player : public Hand
                 cout << hand[i].first << hand[i].second << " ";
             cout << endl;
         }
+
+        void print_chip()
+        {
+            cout << "あなたは" << ch.chip_num() << "チップ持っています。" << endl;
+        }
        
 
 };
@@ -280,6 +285,7 @@ public:
         while (flag)
         {
             int b = 0;
+            player->print_chip();
             cout << "いくらBETしますか？(100刻み)";
             cin >> b;
             if( !player->ch.bet_able(b))
